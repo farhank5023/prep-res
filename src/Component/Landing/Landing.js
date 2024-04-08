@@ -1,6 +1,6 @@
 import "./Landing.css";
 import BookTabs from "./BookTabs";
-import cardData from "./cardData";
+import  { cardData, initializeCardData } from "./cardData";
 import { useState, useEffect } from "react";
 import Footer from "../Footer";
 import RequestForm from "../RequestForm";

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/Page/TextLayer.css";
 import BookForm from "../BookForm";
-import cardData from "../Landing/cardData";
+import  { cardData, initializeCardData } from "../Landing/cardData";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 export default function PdfView({ downloadlink }) {

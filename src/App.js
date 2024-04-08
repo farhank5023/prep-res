@@ -20,6 +20,47 @@ import UseGoogleAnalytics from "./Component/GoogleAnalytics/UseGoogleAnalytics";
 import InternLogin from "./Component/Admin/InternLogin";
 import InternHome from "./Component/Admin/InternHome";
 import AdminRecommended from "./Component/Admin/AdminRecommended";
+import { CardDataProvider } from "./Component/Landing/CardContext";
+
+function App() {
+  return (
+    <div className="App">
+      <Partytown
+        debug={process.env.NODE_ENV === "development"}
+        forward={["dataLayer.push"]}
+      />
+      <UseGoogleAnalytics>
+      <CardDataProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/book" element={<Home />} />
+            <Route path="/admin" element={<Login />} />
+            <Route path="/intern" element={<InternLogin />} />
+            <Route path="/pdfview" element={<PdfView />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/disclaimer" element={<Disclaimer />} />
+            <Route path="/adminhome" element={<AdminHome />} />
+            <Route path="/internhome" element={<InternHome />} />
+            <Route path="/adminadd" element={<AdminForm />} />
+            <Route path="/adminupdate" element={<AdminUpdate />} />
+            <Route path="/adminDelete" element={<AdminDelete />} />
+            <Route path="/admintrend" element={<AdminTrending />} />
+            <Route path="/adminrecommended" element={<AdminRecommended />} />
+            <Route path="/adminview" element={<AdminView />} />
+            <Route path="/adminreport" element={<ReportData />} />
+            <Route path="/adminrequest" element={<RequestData />} />
+            <Route path="/admindeletedata" element={<DeleteData />} />
+          </Routes>
+        </BrowserRouter>
+        </CardDataProvider>
+      </UseGoogleAnalytics>
+    </div>
+  );
+}
+
+export default App;
+
 
 // import React, { useEffect,lazy } from "react";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -43,40 +84,3 @@ import AdminRecommended from "./Component/Admin/AdminRecommended";
 
 // const TRACKING_ID = "G-0GRLKRW94F"; // OUR_TRACKING_ID
 // ReactGA.initialize(TRACKING_ID);
-
-function App() {
-  return (
-    <div className="App">
-      <Partytown
-        debug={process.env.NODE_ENV === "development"}
-        forward={["dataLayer.push"]}
-      />
-      <UseGoogleAnalytics>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Landing />} />
-            <Route path="/book" element={<Home />} />
-            <Route path="/admin" element={<Login />} />
-            <Route path="/intern" element={<InternLogin />} />
-            <Route path="/pdfview" element={<PdfView />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/disclaimer" element={<Disclaimer />} />
-            <Route path="/adminhome" element={<AdminHome />} />
-            <Route path="/internhome" element={<InternHome />} />
-            <Route path="/adminadd" element={<AdminForm />} />
-            <Route path="/adminupdate" element={<AdminUpdate />} />
-            <Route path="/adminDelete" element={<AdminDelete />} />
-            <Route path="/admintrend" element={<AdminTrending />} />
-            <Route path="/adminrecommended" element={<AdminRecommended />} />
-            <Route path="/adminview" element={<AdminView />} />
-            <Route path="/adminreport" element={<ReportData />} />
-            <Route path="/adminrequest" element={<RequestData />} />
-            <Route path="/admindeletedata" element={<DeleteData />} />
-          </Routes>
-        </BrowserRouter>
-      </UseGoogleAnalytics>
-    </div>
-  );
-}
-
-export default App;

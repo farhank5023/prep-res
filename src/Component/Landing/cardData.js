@@ -10,6 +10,7 @@ import { app } from "../firebase";
 
 const db = getFirestore(app);
 let cardData = [[], [], [], [], [], [],[]];
+console.log("this is it:",cardData);
 
 async function fetchBookCollection() {
   var data1 = [];
@@ -531,23 +532,50 @@ async function fetchHigherStudiesCollection () {
 
 
 
-Promise.all([
-  fetchBookCollection(),
-  fetchRoadmapCollection(),
-  fetchRoadmapCollection2(),
-  fetchMiscellaneousCollection(),
-  fetchMaterialCollection(),
-  fetchMaterialCollection2(),
-  fetchHigherStudiesCollection(),
-  // Add more collections as needed
-])
-  .then((results) => {
-    window.sessionStorage.setItem("cardData", cardData);
-  })
-  .catch((error) => {
-    console.log("Error fetching data:", error);
-  });
+// Promise.all([
+//   fetchBookCollection(),
+//   fetchRoadmapCollection(),
+//   fetchRoadmapCollection2(),
+//   fetchMiscellaneousCollection(),
+//   fetchMaterialCollection(),
+//   fetchMaterialCollection2(),
+//   fetchHigherStudiesCollection(),
+//   // Add more collections as needed
+// ])
+//   .then((results) => {
+//     window.sessionStorage.setItem("cardData", cardData);
+//   })
+//   .catch((error) => {
+//     console.log("Error fetching data:", error);
+//   });
 
+  function initializeCardData() {
+   return Promise.all([
+      fetchBookCollection(),
+      fetchRoadmapCollection(),
+      fetchRoadmapCollection2(),
+      fetchMiscellaneousCollection(),
+      fetchMaterialCollection(),
+      fetchMaterialCollection2(),
+      fetchHigherStudiesCollection(),
+      // Add other fetching functions here...
+    ])
+    .then(() => {
+      window.sessionStorage.setItem("cardData", JSON.stringify(cardData));
+      // Dispatch a custom event signaling that cardData is now loaded
+      document.dispatchEvent(new CustomEvent("cardDataLoaded", { detail: cardData }));
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
+    });
+  }
+  
+  // Call initializeCardData to start the data fetching process immediately
+  // Or export it to be called explicitly from outside
+  initializeCardData();
+
+  
+export { cardData, initializeCardData };
 // const q2 = query(collection(db, "roadmaps"));
 // const querySnapshot2 = await getDocs(q2);
 // querySnapshot2.forEach((doc2) => {
@@ -608,4 +636,5 @@ Promise.all([
 // });
 // cardData[2].push(data5.concat(data6));
 
-export default cardData;
+
+
