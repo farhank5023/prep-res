@@ -1,0 +1,1583 @@
+.company-logo-2 {
+  margin-left: -30%;
+  display: flex;
+  margin-top: 20px;
+}
+
+.outer-div {
+  display: flex;
+  margin: -10px;
+  padding: 20px;
+  margin-top: 3%;
+}
+
+.inner-left-div {
+  width: 450px;
+  height: 600px;
+}
+
+.inner-left-div-img {
+  padding: 20px;
+
+  filter: drop-shadow(-15px 15px 6px gray);
+  width: 410px;
+  height: 560px;
+}
+
+.inner-right-div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 75px;
+  align-items: flex-start;
+}
+
+.book-heading {
+  line-height: 4rem;
+  font-size: 60px;
+  text-align: left;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: #2492c3;
+  width: 95%;
+}
+
+.book-desc {
+  margin-top: 30px;
+  font-size: 18px;
+  word-spacing: 1px;
+  text-align: left;
+  line-height: 29px;
+  padding-top: 25px;
+  border-top: 2px solid white;
+  font-family: "Lato", sans-serif;
+}
+.book-auth {
+  font-size: 0.78rem;
+  font-style: italic;
+  word-spacing: 1px;
+  text-align: left;
+  line-height: 29px;
+  font-weight: 500;
+  padding-top: 25px;
+  font-family: "Lato", sans-serif;
+}
+.book-source {
+  font-size: 0.78rem;
+  font-style: italic;
+  word-spacing: 1px;
+  text-align: left;
+  line-height: 29px;
+  font-weight: 500;
+  /* padding-top: 25px; */
+  font-family: "Lato", sans-serif;
+}
+/* a.book-link{
+  text-decoration: underline !important;
+} */
+.comic-button-2 {
+  display: inline-block;
+  margin-top: 100px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff5252;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+}
+
+.comic-button-2:hover {
+  background-color: #fff;
+  color: #ff5252;
+  border: 2px solid #ff5252;
+  box-shadow: 5px 5px 0px #ff5252;
+}
+
+.comic-button-2:active {
+  background-color: #ff5252;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+#invalid {
+  color: red;
+  font-size: 14px;
+  float: left;
+}
+.lock-icon {
+  fill: white;
+  height: 3rem;
+}
+.lock-text {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+  width: 80%;
+}
+.lock-div {
+  width: 340px;
+  height: 514px;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .download-book-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  position: relative;
+  padding: 0 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 0;
+  box-shadow: hsl(210deg 87% 36%) 0px 7px 0px 0px;
+  background-color: hsl(210deg 100% 44%);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 31ms cubic-bezier(0.5, 0.7, 0.4, 1);
+  margin-top: 30px;
+  font-family: "Poppins";
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.download-book-btn:before {
+  content: attr(alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 4px;
+  opacity: 1;
+}
+
+.download-book-btn:active {
+  box-shadow: none;
+  transform: translateY(7px);
+  transition: 35ms cubic-bezier(0.5, 0.7, 0.4, 1);
+}
+
+.download-book-btn:hover:before {
+  transition: all 0s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.download-book-btn i {
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-style: normal;
+  transition: all 2s ease;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.download-book-btn:hover i {
+  transition: all 0.2s ease;
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.download-book-btn:hover i:nth-child(1) {
+  transition-delay: 0.045s;
+}
+
+.download-book-btn:hover i:nth-child(2) {
+  transition-delay: calc(0.045s * 3);
+}
+
+.download-book-btn:hover i:nth-child(3) {
+  transition-delay: calc(0.045s * 4);
+}
+
+.download-book-btn:hover i:nth-child(4) {
+  transition-delay: calc(0.045s * 5);
+}
+
+.download-book-btn:hover i:nth-child(6) {
+  transition-delay: calc(0.045s * 6);
+}
+
+.download-book-btn:hover i:nth-child(7) {
+  transition-delay: calc(0.045s * 7);
+}
+
+.download-book-btn:hover i:nth-child(8) {
+  transition-delay: calc(0.045s * 8);
+}
+
+.download-book-btn:hover i:nth-child(9) {
+  transition-delay: calc(0.045s * 9);
+}
+
+.download-book-btn:hover i:nth-child(10) {
+  transition-delay: calc(0.045s * 10);
+}
+
+.download-book-btn:hover i:nth-child(11) {
+  transition-delay: calc(0.045s * 11);
+}
+
+.download-book-btn:hover i:nth-child(12) {
+  transition-delay: calc(0.045s * 12);
+}
+
+.download-book-btn:hover i:nth-child(13) {
+  transition-delay: calc(0.045s * 13);
+} */
+
+/* .download-book {
+  background-color: rgb(33, 144, 255);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20.8px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-color: black;
+  border-width: 2px;
+  gap: 0.5rem;
+  width: 30%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+}
+.view-pdf {
+  background-color: rgb(156, 95, 251);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20.8px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-color: black;
+  border-width: 2px;
+  gap: 0.5rem;
+  margin-top: 30px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+} */
+
+/* .download-book {
+  position: relative;
+  width: 220px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  background-color: rgb(33, 144, 255);
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 7px;
+  border: 1px solid black;
+}
+
+.download-book::before {
+  content: "";
+  background-color: #fff;
+}
+
+.button__icon {
+  position: relative;
+  left: 70px;
+}
+
+.donload-book,
+.button__icon,
+.button__text {
+  transition: all 0.3s;
+}
+
+.download-book .button__text {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: poppins;
+}
+
+.download-book .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: rgb(15, 109, 203);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-book .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+/* .download-book:hover {
+  background: rgb(15, 109, 203);
+} */
+
+/* .download-book:hover .button__text {
+  color: transparent;
+}
+
+.download-book:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.download-book:active .button__icon {
+  background-color: rgb(15, 109, 203);
+}
+
+.download-book:active {
+  border: 1px solid rgb(15, 109, 203);
+}
+
+.view-button {
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(157, 96, 251);
+  font-family: poppins;
+  font-weight: 600;
+  width: 220px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 7px;
+  border: 1px solid black;
+}
+
+.default-btn,
+.hover-btn {
+  background-color: rgb(157, 96, 251);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0px 20px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.hover-btn {
+  position: absolute;
+  inset: 0;
+  background-color: hsl(255deg 50% 49%);
+  transform: translate(0%, 100%);
+}
+
+.default-btn span {
+  color: hsl(0, 0%, 100%);
+}
+
+button:hover .hover-btn {
+  transform: translate(0%, 0%);
+}  */
+
+.comic-button {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #2190ff;
+  border: 2px solid #000;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  width: 200px;
+  height: 59px;
+}
+
+.comic-button::after {
+  content: "";
+  background-color: white;
+  padding: 25px 97px;
+  z-index: -1;
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  border-radius: 7px;
+}
+
+.comix-button-2 {
+  /* background-color: #854cff; */
+  display: inline-block;
+  padding: 13px 30px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #000;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-image: linear-gradient(
+    to right,
+    #854cff,
+    #9355fd,
+    #a05ffb,
+    #ab69fa,
+    #b573f8
+  );
+
+  width: 150px;
+  height: 59px;
+}
+
+.pdf-btn {
+  display: flex;
+  gap: 29px;
+  margin-top: 30px;
+}
+
+.pdf-view-outer-div {
+  margin: 15px 20px;
+}
+
+.pdf-navbar-logo {
+  float: right;
+  z-index: 99;
+  position: relative;
+  bottom: 592px;
+  margin-right: 12px;
+}
+
+.close-pdf {
+  position: relative;
+  top: 35px;
+  float: left;
+  left: 25px;
+  border: 2px solid;
+  padding: 2px 3px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.react-pdf__Page__textContent {
+  display: none !important;
+}
+
+.react-pdf__Page__annotations {
+  display: none !important;
+}
+
+.react-pdf__Document {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pdf-previous-button {
+  display: flex;
+  height: 4em;
+  width: 55px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  flex-direction: row-reverse;
+  color: black;
+}
+
+.pdf-next-button {
+  display: flex;
+  height: 4em;
+  width: 55px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  flex-direction: row-reverse;
+  color: black;
+}
+
+.pdf-previous-button > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+.pdf-next-button > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+/* .pdf-previous-button:hover{
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+}
+
+.pdf-next-button:hover{
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+} */
+
+/* .pdf-previous-button::before,
+.pdf-next-button::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.pdf-previous-button:hover,
+.pdf-next-button:hover {
+  color: white;
+}
+
+.pdf-previous-button:before,
+.pdf-next-button::before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+.pdf-previous-button:hover::before,
+.pdf-next-button:hover::before {
+  top: -30px;
+  left: -30px;
+} */
+
+.pdf-veiw-cdn {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pdf-doc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.react-pdf__Page__canvas {
+  /* height: 504px !important; */
+  /* width: 357px !important; */
+  object-fit: contain;
+}
+
+.media-button-css {
+  gap: 600px;
+  display: flex;
+  position: fixed;
+  margin-top: 0;
+}
+
+.report-button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  margin-top: 10px;
+}
+
+.svgIcon {
+  width: 45px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: black;
+}
+
+.report-button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(255, 69, 69);
+  align-items: center;
+}
+
+.report-button:hover .svgIcon {
+  width: 0px;
+  transition-duration: 0.3s;
+  transform: translateY(100%);
+}
+
+.report-button::before {
+  position: absolute;
+  top: -15px;
+  content: "Report Book";
+  color: white;
+  transition-duration: 0.3s;
+  font-size: 1px;
+}
+
+.report-button:hover::before {
+  font-size: 14px;
+  opacity: 1;
+  transform: translateY(25px);
+  transition-duration: 0.3s;
+}
+.back-button {
+  position: fixed;
+  left: 75%;
+  padding: 7px 9px;
+  border-radius: 20px;
+  background: black;
+  color: white;
+  border: 3px solid white;
+  display: flex;
+  bottom: 85%;
+  cursor: pointer;
+}
+
+.book-form-outer {
+  z-index: 99;
+  overflow: hidden;
+}
+
+.book-form-outer-2 {
+  position: fixed;
+  display: flex;
+  height: 100%;
+  width: 100vw;
+  justify-content: center;
+  visibility: hidden;
+  transform: scale(0);
+  z-index: 99;
+  margin-top: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.cssbuttons-io-button {
+  background: #2190ff;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #2190ff;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #2190ff;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #2190ff;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+.book-report-share {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+}
+
+.dd-button {
+  display: inline-block;
+  /* border: 1px solid gray; */
+  border-radius: 4px;
+  padding: 5px 33px 5px 20px;
+  background-color: #1e293b;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 18px;
+  line-height: 2rem;
+  color: white;
+  width: 70px;
+}
+
+.dd-button-2 {
+  margin-top: 8px;
+  display: inline-block;
+  /* border: 1px solid gray; */
+  border-radius: 4px;
+  padding: 5px 33px 5px 20px;
+  background-color: #1e293b;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 18px;
+  line-height: 2rem;
+  color: white;
+  width: 70px;
+}
+
+.dd-button:after {
+  content: "";
+  position: absolute;
+  top: 75%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+}
+
+.dd-button:hover,
+.dd-button-2:hover {
+  /* background-color: #eeeeee; */
+  background-color: #27334b;
+}
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  background-color: #1e293b;
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 2rem;
+  color: white;
+  width: 100%;
+}
+
+.dd-input + .dd-menu {
+  display: none;
+}
+
+.dd-input:checked + .dd-menu {
+  display: block;
+}
+
+.dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-menu li:hover {
+  background-color: #27334b;
+}
+
+.dd-menu li a,
+.dd-menu li a:visited,
+.dd-menu li a:active {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+  color: white;
+}
+
+.dd-menu li.divider {
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.buy-icon {
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 1024px) {
+  .inner-left-div {
+    width: 390px;
+    height: 520px;
+  }
+
+  .inner-left-div-img {
+    width: 350px;
+    height: 480px;
+  }
+
+  .inner-right-div {
+    margin-left: 55px;
+  }
+
+  .book-heading {
+    font-size: 40px;
+  }
+
+  .book-desc {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .download-book-btn {
+    font-size: 17px;
+    padding: 0 20px;
+  }
+
+  .download-book-btn:before {
+    font-size: 14px;
+  }
+
+  .download-book-btn i {
+    font-size: 14px;
+  }
+
+  .comic-button {
+    height: 67px;
+    width: 195px;
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .comic-button::after {
+    padding-right: 63px;
+    padding-bottom: 34px;
+  }
+
+  .comix-button-2 {
+    width: 195px;
+    height: 67px;
+    font-size: 15px;
+    padding: 14px;
+  }
+
+  .pdf-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pdf-view-outer-div {
+    margin: 20px 50px;
+    height: 200px;
+  }
+
+  .react-pdf__Page__canvas {
+    width: 258px !important;
+    height: 390px !important;
+  }
+
+  .pdf-navbar-logo {
+    float: right;
+    z-index: 99;
+    position: relative;
+    bottom: 592px;
+    margin-right: 12px;
+  }
+
+  .close-pdf {
+    position: relative;
+    top: 35px;
+    float: left;
+    left: 25px;
+    border: 2px solid;
+    padding: 2px 3px;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+
+  .react-pdf__Page__textContent {
+    display: none !important;
+  }
+
+  .react-pdf__Page__annotations {
+    display: none !important;
+  }
+
+  .react-pdf__Document {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .pdf-previous-button,
+  .pdf-next-button {
+    font-family: inherit;
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 50px;
+    position: relative;
+    background-color: white;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -61px;
+  }
+
+  .pdf-veiw-cdn {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 19px;
+  }
+
+  .pdf-doc {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 35px;
+  }
+
+  .back-button {
+    left: 85%;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 790px) {
+  .inner-left-div {
+    width: 290px;
+    height: 370px;
+  }
+
+  .inner-left-div-img {
+    width: 250px;
+    height: 330px;
+  }
+
+  .inner-right-div {
+    margin-left: 35px;
+  }
+
+  .book-heading {
+    font-size: 25px;
+    line-height: 2.5rem;
+  }
+
+  .book-desc {
+    font-size: 13px;
+    line-height: 20px;
+    word-spacing: 1px;
+  }
+
+  .download-book-btn {
+    font-size: 15px;
+    padding: 0 17px;
+  }
+
+  .download-book-btn:before {
+    font-size: 12px;
+  }
+
+  .download-book-btn i {
+    font-size: 12px;
+  }
+
+  .pdf-view-outer-div {
+    margin: 20px 50px;
+    height: 200px;
+  }
+
+  .react-pdf__Page__canvas {
+    width: 412px;
+    height: 649px;
+  }
+
+  .pdf-navbar-logo {
+    float: right;
+    z-index: 99;
+    position: relative;
+    bottom: 592px;
+    margin-right: 12px;
+  }
+
+  .close-pdf {
+    position: relative;
+    top: 35px;
+    float: left;
+    left: 25px;
+    border: 2px solid;
+    padding: 2px 3px;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+
+  .react-pdf__Page__textContent {
+    display: none !important;
+  }
+
+  .react-pdf__Page__annotations {
+    display: none !important;
+  }
+
+  .react-pdf__Document {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .pdf-previous-button,
+  .pdf-next-button {
+    font-family: inherit;
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 35px;
+    position: relative;
+    background-color: white;
+    font-weight: 600;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin-right: -120px;
+    margin-left: -120px; */
+  }
+
+  .pdf-veiw-cdn {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+  }
+
+  .pdf-doc {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 35px;
+  }
+
+  .media-button-css {
+    gap: 340px;
+    bottom: 280px;
+  }
+}
+
+@media (max-width: 800px) {
+  .react-pdf__Page__canvas {
+    /* width: 337px !important;
+    height: 474px !important; */
+  }
+}
+
+@media (max-width: 600px) {
+  .dropdown {
+    bottom: 0px;
+  }
+
+  .buy-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .book-report-share {
+    gap: 8px;
+  }
+
+  .dd-menu {
+    font-size: 15px;
+  }
+
+  .dd-button {
+    padding: 0px 33px 0px 20px;
+    font-size: 15px;
+  }
+  .dd-button-2 {
+    margin-top: 10px;
+    padding: 0px 15px 0px 15px;
+    font-size: 15px;
+  }
+
+  .dd-button:after {
+    top: 65%;
+  }
+
+  .lock-div {
+    width: 250px;
+    height: 350px;
+  }
+  .outer-div {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .inner-left-div {
+    width: 220px;
+    height: 300px;
+  }
+
+  .inner-left-div-img {
+    width: 180px;
+    height: 260px;
+  }
+
+  .inner-right-div {
+    margin-left: 30px;
+  }
+
+  .book-heading {
+    font-size: 23px;
+  }
+
+  .book-desc {
+    font-size: 11px;
+    line-height: 16px;
+    word-spacing: 1px;
+  }
+
+  .download-book-btn {
+    font-size: 12px;
+    padding: 0 13px;
+    height: 35px;
+  }
+
+  .download-book-btn:before {
+    font-size: 9px;
+  }
+
+  .download-book-btn i {
+    font-size: 9px;
+  }
+
+  .comic-button {
+    width: 166px;
+    height: 52px;
+    font-size: 12px;
+    padding: 14px;
+  }
+
+  .comic-button::after {
+    padding-right: 32px;
+    padding-bottom: 18px;
+  }
+
+  .comix-button-2 {
+    width: 166px;
+    height: 52px;
+    font-size: 12px;
+    padding: 14px;
+  }
+
+  .pdf-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .close-pdf {
+    display: none;
+  }
+
+  .pdf-view-outer-div {
+    margin: 20px 50px;
+    height: 200px;
+  }
+
+  .react-pdf__Page__canvas {
+    /* width: 352px !important;
+    height: 497px !important; */
+  }
+
+  .pdf-navbar-logo {
+    float: right;
+    z-index: 99;
+    position: relative;
+    bottom: 592px;
+    margin-right: 12px;
+  }
+
+  .close-pdf {
+    position: relative;
+    top: 35px;
+    float: left;
+    left: 25px;
+    border: 2px solid;
+    padding: 2px 3px;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+
+  .react-pdf__Page__textContent {
+    display: none !important;
+  }
+
+  .react-pdf__Page__annotations {
+    display: none !important;
+  }
+
+  .react-pdf__Document {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .pdf-previous-button {
+    font-family: inherit;
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 30px;
+    position: relative;
+    background-color: white;
+    font-weight: 600;
+    margin-left: 216px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .pdf-next-button {
+    font-family: inherit;
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 30px;
+    position: relative;
+    background-color: white;
+    font-weight: 600;
+    margin-left: 216px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .pdf-veiw-cdn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .pdf-doc {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 35px;
+  }
+
+  .pdf-next-button,
+  .pdf-previous-button-1 {
+    margin: 0;
+  }
+
+  .media-button-css {
+    margin-top: 8px;
+    display: flex;
+    gap: 40px;
+    bottom: 0;
+    margin-top: 20px;
+  }
+
+  .back-button {
+    left: 75%;
+    cursor: pointer;
+  }
+  .book-form-outer-2 {
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-logo-2 {
+    margin-bottom: -21px;
+    margin-left: -15px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .outer-div {
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+  }
+
+  .inner-left-div {
+    width: 250px;
+    height: 310px;
+  }
+
+  .inner-left-div-img {
+    width: 210px;
+    height: 270px;
+  }
+
+  .inner-right-div {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .book-heading {
+    font-size: 1.8rem;
+  }
+
+  .book-desc {
+    font-size: 16px;
+    line-height: 21px;
+    word-spacing: 1px;
+    font-weight: 100;
+  }
+
+  .download-book-btn {
+    font-size: 14px;
+    padding: 0 17px;
+    height: 40px;
+  }
+
+  .download-book-btn:before {
+    font-size: 11px;
+  }
+
+  .download-book-btn i {
+    font-size: 11px;
+  }
+
+  .comic-button {
+    width: 139px;
+  }
+
+  .comix-button-2 {
+    width: 145px;
+  }
+
+  .comic-button::after {
+    padding-right: 35px;
+    padding-bottom: 18px;
+  }
+
+  .pdf-view-outer-div {
+    margin: 20px 50px;
+    height: 200px;
+  }
+
+  .pdf-navbar-logo {
+    float: right;
+    z-index: 99;
+    position: relative;
+    bottom: 592px;
+    margin-right: 12px;
+  }
+
+  .close-pdf {
+    position: relative;
+    top: 35px;
+    float: left;
+    left: 25px;
+    border: 2px solid;
+    padding: 2px 3px;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+
+  .react-pdf__Page__textContent {
+    display: none !important;
+  }
+
+  .react-pdf__Page__annotations {
+    display: none !important;
+  }
+
+  .react-pdf__Document {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .react-pdf__Page__canvas {
+    width: 225px !important;
+    height: 340px !important;
+  }
+
+  .media-button-css {
+    gap: 10px;
+  }
+
+  .pdf-previous-button-2,
+  .pdf-next-button {
+    font-family: inherit;
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 35px;
+    position: relative;
+    background-color: white;
+    font-weight: 600;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .media-button-css {
+    gap: 30px;
+    position: relative;
+  }
+  .back-button {
+    left: 75%;
+    cursor: pointer;
+  }
+
+  .pdf-veiw-cdn {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pdf-doc {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 0px;
+  }
+
+  .pdf-previous-button-1 {
+    display: none;
+  }
+}

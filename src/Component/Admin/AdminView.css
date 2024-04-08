@@ -1,0 +1,483 @@
+/* RESET & BASIC STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+/* :root {
+  background-color: white;
+}*/
+
+.outer-cont {
+  margin: 100px;
+}
+
+.container {
+  background-color: white;
+  max-width: 1527px;
+  display: block;
+  padding: 40px;
+  height: fit-content;
+  font-family: Helvetica;
+  -webkit-font-smoothing: antialiased;
+  background: rgba(71, 147, 227, 1);
+}
+
+/* TABLE STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* .table-wrapper {
+  
+} */
+
+.fl-table {
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.fl-table td,
+.fl-table th {
+  text-align: center;
+  padding: 8px;
+}
+
+.fl-table td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 15px;
+}
+
+.fl-table thead th {
+  color: #ffffff;
+  background: #4fc3a1;
+}
+
+.fl-table thead th:nth-child(odd) {
+  color: #ffffff;
+  background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.option-list {
+  line-height: 100px;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 40px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: #1b4965;
+  border-radius: 40px;
+}
+
+.table-wrapper table {
+  margin: 80px 0 20px;
+  border-collapse: collapse;
+  text-align: center;
+  border-spacing: 0;
+}
+
+.table-wrapper table th,
+.table-wrapper table td {
+  padding: 20px;
+}
+
+.table-wrapper table th {
+  color: black;
+  /* background: white; */
+  width: 300px;
+}
+
+.table-wrapper table tbody tr:nth-of-type(even) > * {
+  background: white;
+  color: black;
+}
+
+/* Style for the table */
+.table-wrapper table {
+  border-collapse: collapse; /* Remove space between table cells */
+  width: 100%; /* Make the table fill its container */
+  border-spacing: 0px;
+}
+
+/* Style for the table rows */
+.table-wrapper table tr {
+  border-bottom: 1px solid #ccc; /* Add a bottom border to separate rows */
+}
+
+/* Style for the table cells (optional) */
+.table-wrapper table th,
+.table-wrapper table td {
+  padding: 30px; /* Add padding for spacing */
+}
+
+/* Optional: Highlight even rows with a background color */
+.table-wrapper table tbody tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+.table-credits {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.form-control {
+  display: block;
+  width: 310px;
+  height: 41px;
+  padding: 0px 13px;
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  margin-top: -15px;
+  margin-bottom: 30px;
+  margin-left: 11px;
+}
+
+.inputtt,
+.keyword,
+#selectt {
+  margin: 28px;
+  font: 12px;
+  color: #888;
+}
+
+.inputtt,
+.keyword,
+#selectt {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.inputtt[type="text1" i] {
+  padding-block: 1px;
+  padding-inline: 10px;
+  font-weight: 100;
+}
+
+.keyword {
+  margin-left: 1097px;
+  margin-top: -71px;
+  height: 41px;
+  width: 310px;
+}
+
+.table-txt {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: left;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: left;
+  /* text-transform: uppercase; */
+  color: white;
+  padding: 30px 0;
+}
+
+.table-txt2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  color: black;
+  text-align: left;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  text-align: left;
+  /* text-transform: uppercase; */
+  padding: 30px 0;
+  background-color: #ddd;
+}
+
+/* Pagination Container */
+.controller {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Pagination List */
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 0;
+  border-radius: 4px;
+}
+
+/* Pagination List Items */
+.pagination li {
+  display: inline;
+  margin-right: 5px;
+}
+
+/* Pagination Links */
+.pagination a {
+  color: #337ab7;
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  margin-left: -1px;
+}
+
+/* Active Page */
+.pagination li.active a {
+  background-color: #337ab7;
+  color: #fff;
+  border: 1px solid #337ab7;
+}
+
+/* Disabled Page */
+.pagination li.disabled a {
+  cursor: not-allowed;
+}
+
+/* Previous and Next Buttons */
+.pager li {
+  display: inline;
+  margin-right: 5px;
+}
+
+/* Previous Button */
+.pager li.disabled .prev {
+  color: #777;
+  cursor: not-allowed;
+}
+
+/* Next Button */
+.pager .next {
+  color: #337ab7;
+}
+
+/* Hover Styles */
+.pagination a:hover {
+  background-color: #337ab7;
+  color: #fff;
+  border: 1px solid #337ab7;
+}
+
+/* Center Pager Items Vertically */
+.pagination,
+.pager {
+  vertical-align: middle;
+  margin-top: 20px;
+}
+
+.MuiDataGrid-columnHeaders {
+  background: #5a8dee;
+  font-family: Poppins;
+  color: white;
+  font-size: 16px;
+}
+
+.pdf-view-outer-div-ui {
+  position: relative;
+  overflow: scroll;
+}
+
+.css-5wly58-MuiDataGrid-root
+  .MuiDataGrid-columnHeader:not(.MuiDataGrid-columnHeader--sorted)
+  .MuiDataGrid-sortIcon {
+  color: black;
+}
+
+.MuiDataGrid-columnHeaderTitle {
+  font-weight: 600 !important;
+  letter-spacing: 1px;
+}
+
+.MuiDataGrid-cellContent {
+  color: black;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone {
+  gap: 8px;
+}
+.spinner {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  border: 4.5px solid #0000;
+  border-radius: 50%;
+  border-color: #dbdcef #0000;
+  animation: spinner-e04l1k 1s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2.2px;
+  border: inherit;
+  border-radius: 50%;
+}
+
+.spinner::before {
+  border-color: #474bff #0000;
+  animation: inherit;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+
+.spinner::after {
+  margin: 8.9px;
+}
+
+@keyframes spinner-e04l1k {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@media screen and (max-width: 1500px) {
+  .table-wrapper table th,
+  .table-wrapper table td {
+    padding: 27px;
+    padding-right: 10px;
+  }
+
+  .keyword {
+    margin-left: 852px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .table-wrapper table th,
+  .table-wrapper table td {
+    padding: 27px;
+    padding-right: 10px;
+  }
+
+  .keyword {
+    margin-left: 1162px;
+  }
+
+  .container {
+    width: 1527px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form-control {
+    width: 180px;
+  }
+
+  .keyword {
+    margin-left: 630px;
+    width: 160px;
+  }
+}
+
+@media (max-width: 900px) {
+  .form-control {
+    width: 180px;
+  }
+
+  .keyword {
+    margin-left: 518px;
+    width: 160px;
+  }
+
+  .table-wrapper table th,
+  .table-wrapper table td {
+    padding: 27px;
+    padding-right: 10px;
+    font-size: 20px;
+  }
+
+  .keyword {
+    margin-left: 1307px;
+  }
+
+  .container {
+    width: 1527px;
+  }
+}
+
+@media (max-width: 790px) {
+  .form-control {
+    width: 170px;
+  }
+
+  .keyword {
+    margin-left: 356px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-control {
+    width: 156px;
+  }
+
+  .keyword {
+    margin-left: 1296px;
+    width: 148px;
+  }
+  .pdf-view-outer-div-ui {
+    overflow: auto;
+  }
+
+  .table-wrapper table th,
+  .table-wrapper table td {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-control {
+    width: 66px;
+    margin-left: 16px;
+  }
+
+  .keyword {
+    margin-left: 97px;
+    width: 81px;
+  }
+
+  .MuiDataGrid-cellContent {
+    font-size: 15px;
+  }
+
+  .MuiDataGrid-columnHeaders {
+    font-size: 18px;
+  }
+
+  .css-1t5wrdm-MuiDataGrid-filterForm {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .css-154sxbz-MuiPaper-root-MuiDataGrid-paper {
+    min-width: 210px !important;
+    margin-left: 30px;
+  }
+
+  .css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root {
+    justify-content: flex-end !important;
+  }
+
+  .css-m5hdmq-MuiInputBase-root-MuiInput-root-MuiSelect-root {
+    width: 185px;
+  }
+}

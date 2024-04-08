@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-form {
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 99;
+}
+.container-form li {
+  font-weight: 100;
+  list-style: auto;
+  margin-left: 18px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* #issue {
+  display: none;
+} */
+
+#invalid-number {
+  color: red;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 100;
+}
+.book-form-outer {
+  position: fixed;
+  display: flex;
+  height: 100%;
+  width: 100vw;
+  justify-content: center;
+  visibility: hidden;
+  transform: scale(0);
+  z-index: 99;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"],
+#contact option {
+  font: 600 12px/16px "poppin", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #18182a;
+  padding: 25px;
+  margin: 20px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  width: 400px;
+  border-radius: 12px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#contact h3 {
+  display: block;
+  font-size: 27px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins";
+  text-align: start;
+}
+
+#contact h4 {
+  margin: 0px 0 15px;
+  display: block;
+  font-size: 15px;
+  font-weight: 100;
+  color: rgb(255, 255, 255);
+  margin-bottom: 25px;
+  font-family: "Poppins";
+  text-align: start;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+.book-form-label {
+  color: rgb(255, 251, 251);
+  font-family: "Lato", sans-serif;
+  float: left;
+  font-size: 13px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact option {
+  width: 95%;
+  border: 1px solid #ffffff00;
+
+  margin: 0 0 5px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover,
+#contact option:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #0070e0;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #028dfe;
+  color: white;
+  font-weight: bold;
+  margin: 0 0 5px;
+  padding: 15px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+#contact button[type="submit"]:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 144, 255, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+#contact button[type="submit"]:active {
+  transform: translate(0em, 0.2em);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+#otp-input {
+  display: none;
+}
+
+.down-button {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  border: 1px solid #17795e;
+  background-color: #209978;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.down-button,
+.button__icon,
+.button__text {
+  transition: width 0.4s, transform 0.4s, left 0.4s;
+}
+
+.down-button .button__text {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 600;
+  margin: auto;
+  position: relative;
+  left: -19px;
+  font-size: 16px;
+}
+
+.down-button .button__icon {
+  position: absolute;
+  left: 88%;
+  height: 100%;
+  width: 12%;
+  background-color: #17795e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.down-button .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.down-button:hover {
+  background: #17795e;
+}
+
+.down-button:hover .button__text {
+  color: transparent;
+}
+
+.down-button:hover .button__icon {
+  width: 100%;
+  left: 0%;
+}
+
+.down-button:active .button__icon {
+  background-color: #146c54;
+}
+
+.down-button:active {
+  border: 1px solid #146c54;
+}
+.report-select {
+  width: 100%;
+  border: 1px solid #ffffff00;
+  margin: 0 0 5px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.report-select option {
+  font-size: 16px !important;
+  font-weight: 100 !important;
+}
+.verify-button {
+  cursor: pointer;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #0070e0;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  float: right;
+}
+
+.verify-button span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.verify-button:hover span {
+  color: white;
+}
+
+.verify-button::before,
+.verify-button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.verify-button::before {
+  content: "";
+  background: #028dfe;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.verify-button:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.close-btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: #f9f9f900;
+  border-radius: 50px;
+  opacity: 1;
+  display: block;
+  left: 97%;
+  border: none;
+  cursor: pointer;
+}
+.close-btn > span {
+  background-color: black;
+  display: block;
+  height: 4px;
+  border-radius: 6px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  left: 8px;
+  width: 25px;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+}
+.close-btn > span span {
+  display: none;
+  background-color: #ed7f00;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.close-btn > span.left {
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+.close-btn > span.left .circle-left {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 0;
+}
+.close-btn > span.left .circle-right {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 52px;
+}
+.close-btn > span.right {
+  transform: rotate(-45deg);
+  transform-origin: center;
+}
+.close-btn > span.right .circle-left {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 0;
+}
+.close-btn > span.right .circle-right {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 52px;
+}
+.close-btn:hover > span {
+  background-color: #2faee0;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.close-btn a:hover > span span {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-color: #008ac9;
+}
+.close-btn:hover > span.left .circle-left {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 52px;
+}
+.close-btn:hover > span.left .circle-right {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 0;
+}
+.close-btn:hover > span.right .circle-left {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 52px;
+}
+.close-btn:hover > span.right .circle-right {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 0;
+}
+
+@media (max-width: 600px) {
+  #contact {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .close-btn > span {
+    width: 15px;
+    height: 3px;
+  }
+  .close-btn {
+    width: 30px;
+    height: 30px;
+    left: 81%;
+  }
+  .book-form-outer {
+    align-items: center;
+    height: 80% !important;
+  }
+  .landing-book-form-outer {
+    align-items: center;
+    height: 90% !important;
+  }
+}

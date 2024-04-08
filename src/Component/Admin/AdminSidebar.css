@@ -1,0 +1,125 @@
+.sidenav-main-container {
+  display: flex;
+  /* z-index: 99; */
+  /* position: fixed; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.company-logo-3 {
+  margin-left: -5%;
+  display: flex;
+  height: auto;
+}
+
+.sidenav-title {
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+/* Sidebar */
+.sidenav-sidebar {
+  background: rgb(0, 7, 61);
+  color: white;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidenav-top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+.sidenav-logo {
+  font-size: 18px;
+  line-height: 0;
+}
+.sidenav-bars {
+  width: 30px;
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  height: 30px;
+  padding: 10px;
+}
+.search input {
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  background: rgb(238, 238, 238);
+
+  color: white;
+}
+
+.sidenav-routes {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.sidenav-link {
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.sidenav-link:hover {
+  border-right: 4px solid white;
+  background: rgb(45, 51, 89);
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.sidenav-active {
+  border-right: 4px solid white;
+  background: rgb(45, 51, 89);
+}
+.sidenav-link_text {
+  /* white-space: nowrap; */
+  font-size: 15px;
+  text-align: left;
+}
+
+.sidenav-menu {
+  display: flex;
+  color: white;
+
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  justify-content: space-between;
+}
+.sidenav-menu_item {
+  display: flex;
+  gap: 10px;
+}
+.sidenav-menu_container {
+  display: flex;
+  flex-direction: column;
+}
+.sidenav-menu_container .sidenav-link {
+  padding-left: 20px;
+  border-bottom: #fff 0.5px solid;
+}
