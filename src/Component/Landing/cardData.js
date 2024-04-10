@@ -10,7 +10,7 @@ import { app } from "../firebase";
 
 const db = getFirestore(app);
 let cardData = [[], [], [], [], [], [],[]];
-console.log("this is it:",cardData);
+// console.log("this is it:",cardData);
 
 async function fetchBookCollection() {
   var data1 = [];
@@ -561,9 +561,12 @@ async function fetchHigherStudiesCollection () {
       // Add other fetching functions here...
     ])
     .then(() => {
-      window.sessionStorage.setItem("cardData", JSON.stringify(cardData));
+      window.sessionStorage.setItem("cardData", JSON.stringify(cardData ));
+      const dataToStore = JSON.stringify(cardData);
+    window.localStorage.setItem('cardData', dataToStore);
       // Dispatch a custom event signaling that cardData is now loaded
       document.dispatchEvent(new CustomEvent("cardDataLoaded", { detail: cardData }));
+      document.dispatchEvent(new CustomEvent('cardDataLoaded'));
     })
     .catch((error) => {
       console.error("Error fetching data:", error);
